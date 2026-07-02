@@ -487,4 +487,17 @@ h3 {
   .project-card {
     min-height: auto;
   }
+
+  .contact-links a {
+    color: #ffffff;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .contact-links a i {
+    font-size: 1.1rem;
+  }
+
 }
