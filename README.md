@@ -57,4 +57,5 @@ You can find it [here](https://adityapjoshi.github.io/)
 ## How did I build this website?
 
 I used the Codex Playground to generate the HTML, CSS, and JavaScript code for the website and heavily customized it to create a clean, modern personal portfolio website to showcase my skills as a Sr. Test Manager and Product Owner.
-Knowledge of how HTML, CSS and JS work is essential to build a website.
+
+Techstack : Perplexity, ChatGPT Codex, HTML, CSS, JavaScript, GitHub Pages
