@@ -1,16 +1,31 @@
 # My Personal Website
 
-A clean, modern **Personal Portfolio** Website built by me to showcase my journey starting as a Developer with IBM GBS, Syntel and eventually moving into the realm of Testing in Infosys Technologies and Westpac New Zealand.
-It is focused heavily on the skills I acquired over 18+ years of experience which includes delivering digital products as part of the Insurance solutions, testing enterprise transformation programs in Banking along with the core development and maintenance work done during my earlier days.
+A clean, modern **Personal Portfolio** website built to showcase my journey
+starting as a Developer with IBM GBS and Syntel, then moving into Testing with
+Infosys Technologies and Westpac New Zealand.
+
+It is focused on the skills I acquired over 18+ years of experience, including
+delivering digital products as part of insurance solutions, testing enterprise
+transformation programs in banking, and the core development and maintenance
+work completed during my earlier career.
 
 ## Sections
 
-- About
+- Home
+- About Me
 - Projects
 - Skills
 - Achievements
 - Certifications
 - Contact
+
+## Features
+
+- Responsive portfolio layout for desktop and mobile.
+- Header button to download the portfolio as a Word document.
+- Simple theme toggle for Light and Dark modes.
+- Mobile navigation menu.
+- Contact links with Font Awesome icons.
 
 ## Project Structure
 
@@ -27,16 +42,34 @@ adityapjoshi.github.io/
 └── README.md
 ```
 
-## Files in the repository
+## Files in the Repository
 
 - `index.html` contains the page content and structure.
-- `css/styles.css` controls the visual design, layout, colors, and responsive behavior.
-- `js/script.js` controls the mobile navigation menu.
+- `css/styles.css` controls the visual design, layout, colors, responsive behavior, and theme styles.
+- `js/script.js` controls the mobile navigation menu, Word document download, and Light/Dark theme toggle.
 - `assets/images/` can store profile photos and project images.
-- `assets/resume/` can store a resume PDF if added later.
+- `assets/resume/` can store a resume or supporting document if added later.
 - `README.md` explains this project on GitHub.
 
-## Preview Locally (Local Server/ Your Laptop or Desktop)
+## Word Download
+
+The `Download Word` button in the site header creates a Word-compatible `.doc`
+file from the portfolio page content.
+
+The generated document keeps relevant hyperlinks, including Contact links and
+the Certifications link.
+
+## Theme Toggle
+
+The header includes a simple theme button that toggles between:
+
+- `Light`: uses the light portfolio theme.
+- `Dark`: uses the dark portfolio theme.
+
+The selected theme is saved in the browser using `localStorage`, so the
+preference remains when the visitor comes back.
+
+## Preview Locally
 
 From the project folder, run:
 
@@ -50,11 +83,19 @@ Then open:
 http://127.0.0.1:8000/
 ```
 
-## How do I access this GitHub Pages site?
+## How Do I Access This GitHub Pages Site?
 
-You can find it [here](https://adityapjoshi.github.io/)
+You can find it here:
 
-## How did I build this website?
+[https://adityapjoshi.github.io/](https://adityapjoshi.github.io/)
 
-I used the Codex Playground to generate the HTML, CSS, and JavaScript code for the website and heavily customized it to create a clean, modern personal portfolio website to showcase my skills as a Sr. Test Manager and Product Owner.
-Knowledge of how HTML, CSS and JS work is essential to build a website.
+## How Did I Build This Website?
+
+I used the Codex Playground to generate the HTML, CSS, and JavaScript code for
+the website and heavily customized it to create a clean, modern personal
+portfolio website to showcase my skills as a Sr. Test Manager and Product
+Owner.
+
+Basic knowledge of how HTML, CSS, and JavaScript work is helpful for light
+troubleshooting and improvements. Feel free to fork it and make something of
+your own.
