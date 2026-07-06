@@ -9,15 +9,14 @@ delivering digital products as part of insurance solutions, testing enterprise
 transformation programs in banking, and the core development and maintenance
 work completed during my earlier career.
 
-## Sections
+# Sections
 
-- Home
-- About Me
-- Projects
-- Skills
-- Achievements
-- Certifications
-- Contact
+* About Me
+* Projects
+* Skills
+* Achievements
+* Certifications
+* Contact
 
 ## Features
 

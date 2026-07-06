@@ -4,6 +4,22 @@ const downloadWordButton = document.querySelector("#download-word");
 const themeToggle = document.querySelector("#theme-toggle");
 const themeStorageKey = "portfolio-theme";
 
+const getStoredTheme = () => {
+  try {
+    return localStorage.getItem(themeStorageKey);
+  } catch (error) {
+    return null;
+  }
+};
+
+const storeTheme = (theme) => {
+  try {
+    localStorage.setItem(themeStorageKey, theme);
+  } catch (error) {
+    // Theme still works for the current visit when browser storage is blocked.
+  }
+};
+
 if (navToggle && navLinks) {
   navToggle.addEventListener("click", () => {
     const isOpen = navLinks.classList.toggle("is-open");
@@ -34,14 +50,30 @@ const createWordDocument = () => {
   }
 
   content.querySelectorAll("i").forEach((icon) => icon.remove());
+  content.querySelectorAll(".hero-actions").forEach((actions) => actions.remove());
 
   const html = `
     <!DOCTYPE html>
-    <html>
+    <html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
     <head>
       <meta charset="utf-8">
       <title>Aditya Prakash Joshi Portfolio</title>
+      <!--[if gte mso 9]>
+      <xml>
+        <w:WordDocument>
+          <w:View>Print</w:View>
+          <w:Zoom>100</w:Zoom>
+          <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+      </xml>
+      <![endif]-->
       <style>
+        @page {
+          margin: 0.7in;
+        }
+
         body {
           color: #17201d;
           font-family: Arial, sans-serif;
@@ -50,7 +82,7 @@ const createWordDocument = () => {
 
         h1 {
           color: #0d4f45;
-          font-size: 32px;
+          font-size: 30px;
           line-height: 1.05;
           margin-bottom: 12px;
         }
@@ -74,6 +106,10 @@ const createWordDocument = () => {
 
         .section {
           margin-bottom: 28px;
+        }
+
+        .container {
+          width: 100%;
         }
 
         .section-label,
@@ -101,6 +137,12 @@ const createWordDocument = () => {
           padding: 14px;
         }
 
+        .button {
+          border: 0;
+          color: #0d4f45;
+          padding: 0;
+        }
+
         .project-tags li,
         .skill-list li,
         .contact-links li {
@@ -117,16 +159,28 @@ const createWordDocument = () => {
     </html>
   `;
 
-  const blob = new Blob(["\ufeff", html], { type: "application/msword" });
+  const blob = new Blob(["\ufeff", html], {
+    type: "application/msword;charset=utf-8"
+  });
+
+  if (window.navigator.msSaveOrOpenBlob) {
+    window.navigator.msSaveOrOpenBlob(blob, "Aditya-Prakash-Joshi-Portfolio.doc");
+    return;
+  }
+
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
 
   link.href = url;
   link.download = "Aditya-Prakash-Joshi-Portfolio.doc";
+  link.style.display = "none";
   document.body.appendChild(link);
   link.click();
-  link.remove();
-  URL.revokeObjectURL(url);
+
+  setTimeout(() => {
+    link.remove();
+    URL.revokeObjectURL(url);
+  }, 1000);
 };
 
 if (downloadWordButton) {
@@ -159,15 +213,17 @@ const setTheme = (theme) => {
   }
 };
 
-const savedTheme = localStorage.getItem(themeStorageKey) || "light";
-setTheme(savedTheme);
+const savedTheme = getStoredTheme();
+const initialTheme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+
+setTheme(initialTheme);
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     const currentTheme = document.documentElement.getAttribute("data-theme");
     const selectedTheme = currentTheme === "dark" ? "light" : "dark";
 
-    localStorage.setItem(themeStorageKey, selectedTheme);
+    storeTheme(selectedTheme);
     setTheme(selectedTheme);
   });
 }
