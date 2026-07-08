@@ -174,7 +174,7 @@ h3 {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 72px 0;
 }
 
 .hero {
@@ -186,7 +186,7 @@ h3 {
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
-  gap: 56px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -202,7 +202,7 @@ h3 {
 
 h1 {
   max-width: 850px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   font-size: clamp(3rem, 8vw, 6.6rem);
   line-height: 0.95;
 }
@@ -228,7 +228,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .proof-points {
@@ -237,7 +237,7 @@ h3 {
   gap: 14px;
   max-width: 720px;
   padding: 0;
-  margin: 42px 0 0;
+  margin: 28px 0 0;
   list-style: none;
 }
 
@@ -328,7 +328,7 @@ h3 {
 .content-grid {
   display: grid;
   grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
-  gap: 64px;
+  gap: 48px;
 }
 
 .section-copy {
@@ -341,7 +341,7 @@ h3 {
 }
 
 .highlight-box {
-  margin-top: 34px;
+  margin-top: 24px;
   padding: 26px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -366,7 +366,7 @@ h3 {
 
 .section-heading {
   max-width: 760px;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .project-grid {
@@ -442,7 +442,7 @@ h3 {
 }
 
 .contact-content h2 {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .contact-content p:not(.section-label) {
@@ -453,7 +453,7 @@ h3 {
 
 .contact-links {
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .contact-links a {
@@ -533,7 +533,7 @@ h3 {
   }
 
   .section {
-    padding: 72px 0;
+    padding: 56px 0;
   }
 
   .hero {

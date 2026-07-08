@@ -14,12 +14,14 @@
   >
 </head>
 <body>
-  <!-- Site Header -->
+  <!-- Header section containing the main navigation links, logo,
+       theme toggle switch, and resume download action.
+       It provides easy access to all key sections of the site. -->
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
       <a class="logo" href="#home">Aditya Prakash Joshi</a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-links" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
@@ -33,7 +35,7 @@
         <li><a href="#contact"><b>Contact</b></a></li>
       </ul>
 
-      <div class="nav-actions" aria-label="Page actions">
+      <div class="nav-actions" role="group" aria-label="Page actions">
         <button class="header-action-button word-button" id="download-word" type="button">
           <i class="fa-solid fa-file-word" aria-hidden="true"></i>
           <span>Download Word</span>
@@ -47,18 +49,22 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main container for all site content including hero,
+       about me, projects, skills, achievements,
+       certifications, and contact information sections. -->
   <main>
-    <!-- Hero Section -->
+    <!-- Hero section displaying the primary introduction,
+         key career highlights, and quick action buttons
+         for navigating to projects and contacting the user. -->
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-content">
           <h1>Embedding Quality Excellence at Scale in Delivery</h1>
           <p class="hero-intro">
-            <b>Sr. Test Manager</b> leading in <b>Quality Engineering, Test Management, and Delivery
-            Assurance</b> across <b>Complex Enterprise Technology</b> programs, helping
+            <b>Senior Test Manager</b> leading <b>Quality Engineering, Test Management, and Delivery
+            Assurance</b> across <b>complex enterprise technology</b> programs, helping
             organizations reduce risk, strengthen operational readiness and
-            deliver change with confidence in Payments(Banking), Core and Infra, Insurances and Test Environment Space.
+            deliver change with confidence in payments, banking, core and infrastructure, insurance, and test environment spaces.
           </p>
 
           <div class="hero-actions">
@@ -73,8 +79,8 @@
           </ul>
         </div>
 
-        <div class="highlight-box" aria-label="Core Focus Areas">
-          <p><b>Core Focus Areas:</b></p>
+        <div class="highlight-box" aria-labelledby="core-focus-areas">
+          <h2 id="core-focus-areas">Core Focus Areas</h2>
           <ul>
             <li>Quality Engineering Strategy</li>
             <li>Operational Readiness of Enterprise Platforms</li>
@@ -85,7 +91,9 @@
       </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About section providing professional background,
+         core impact pillars, and detailed expertise in
+         Quality Engineering and Product Ownership domains. -->
     <section class="section" id="about">
       <div class="container content-grid">
         <div>
@@ -93,49 +101,47 @@
           <h2>Quality leadership for complex enterprise delivery.</h2>
         </div>
         <div class="section-copy">
+          <h3>Core Pillars of Impact</h3>
+          <p><strong>Enterprise Scale and Evolution:</strong> Driving delivery assurance and leading technology transformations focused on moving organizations from legacy testing to AI-augmented delivery assurance.</p>
+          <p><strong>Strategic Alignment:</strong> Bridging the gap between technical complexity and business value, ensuring AI-driven testing strategies directly improve time to market and maximize ROI.</p>
+          <p><strong>Executive Partnership:</strong> Acting as a trusted advisor to senior leadership, steering committees, and engineering squads, fostering a culture where quality is embedded natively into the continuous delivery lifecycle.</p>
           <p>
-            <b>Core Pillars of Impact</b>
-            <p><b>Enterprise Scale & Evolution:</b> Driving delivery assurance and leading tech transformations focused on shifting organizations from legacy testing to AI-augmented delivery assurance.</p>
-
-            <p><b>Strategic Alignment:</b> Bridge the gap between technical complexity and business value, ensuring AI-driven testing strategies directly optimize time-to-market and maximize ROI.</p>
-
-            <p><b>Executive Partnership:</b> Act as a trusted advisor to Senior Leadership/Steer-Co and engineering squads, fostering a culture where quality is embedded natively into the continuous delivery lifecycle.</p>
-          </p>
-          <p>
-            <i><b>"What motivates me most is operating at the convergence of AI innovation, business transformation, and delivery excellence. I partner with senior executives, architects and engineering teams to transform Quality Engineering from an operational gatekeeper into an AI-accelerated strategic enabler."</b></i>
+            <i><b>"What motivates me most is operating at the convergence of AI innovation, business transformation, and delivery excellence. I partner with senior executives, architects, and engineering teams to transform Quality Engineering from an operational gatekeeper into an AI-accelerated strategic enabler."</b></i>
           </p>
           <div class="highlight-box">
             <h3>QE Approach</h3>
             <ul>
               <li><b>Hands-on</b> expertise in the areas of Test Planning, Estimation and Test Execution</li>
-              <li>AI assisted Test Case Creation</li>
-              <li>Zephyr Test Reporting, Metrics & Insights via Steer-Co for Program Visibility via real time JIRA Dashboards</li>
+              <li>AI-assisted test case creation</li>
+              <li>Zephyr test reporting, metrics, and insights via Steer-Co for program visibility through real-time JIRA dashboards</li>
               <li>Defect triage and resolution process</li>
               <li>Test Program Leadership & Governance</li>
-              <li>Enterprise Test Strategy & Delivery covering all the Test Phases - SIT, UAT</li>
-              <li>Embedding quality early through <b>Shift-Left</b> and continuous testing practices</li>
-              <li>Work directly with the Program Manager(s) to help test complex technology programs into operationally ready services</li>
-              <li>Stakeholder/Vendor Management</li>
-              <li>Negotiating Contracts and SOW's</li>
+              <li>Enterprise test strategy and delivery covering all test phases, including SIT and UAT</li>
+              <li>Embedding quality early through <b>shift-left</b> and continuous testing practices</li>
+              <li>Working directly with program managers to help test complex technology programs into operationally ready services</li>
+              <li>Stakeholder and vendor management</li>
+              <li>Negotiating contracts and SOWs</li>
             </ul>
           </div>
           <div class="highlight-box">
-            <h3>Product Ownership Hat</h3>
+            <h3>Product Ownership Experience</h3>
             <ul>
-              <li>Strategic Communication - Clear, Pursuasive & Transparent</li>
-              <li>Cross-Functional Collaboration between Dev, Design & Business Teams</li>
-              <li>Capacity Management & Negotiation - Scope negotiation and capacity planning</li>
-              <li>Vision Alignment towards over-arching product roadmap</li>
-              <li>Experience in Quarterly product increment planning.</li>
-              <li>Requirement Translation (Jira) - Distill complex business needs to actionable user stories</li>
-              <li>Backlog Mastery and Prioritization - Refined pipeline of "ready" work</li>
-              <li>Stakeholder Alignment - Continuous engagement, transparent progress tracking, and strategic consensus-building</li>
+              <li>Strategic communication - clear, persuasive, and transparent</li>
+              <li>Cross-functional collaboration between development, design, and business teams</li>
+              <li>Capacity management and negotiation - scope negotiation and capacity planning</li>
+              <li>Vision alignment toward an overarching product roadmap</li>
+              <li>Experience in quarterly product increment planning</li>
+              <li>Requirement translation in Jira - distilling complex business needs into actionable user stories</li>
+              <li>Backlog mastery and prioritization - maintaining a refined pipeline of ready work</li>
+              <li>Stakeholder alignment - continuous engagement, transparent progress tracking, and strategic consensus-building</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- Projects Section -->
+    <!-- Projects section showcasing featured enterprise
+         programs, transformation work, and delivery
+         assurance leadership experiences in various domains. -->
     <section class="section muted-section" id="projects">
       <div class="container">
         <div class="section-heading">
@@ -155,7 +161,7 @@
             <ul class="project-tags">
               <li>Test Strategy/Plans</li>
               <li>Test Leadership</li>
-              <li>Readiness to Steer-Co</li>
+              <li>Readiness for Steer-Co</li>
               <li>Program Governance</li>
               <li>SME Engagement in SIT</li>
               <li>Vendor, Stakeholder Management</li>
@@ -166,7 +172,7 @@
             <p class="project-type">Service Transformation</p>
             <h3>Smart Services - D365</h3>
             <p>
-              Test Management and Quality governance for Microsoft Dynamics 365
+              Test management and quality governance for Microsoft Dynamics 365
               Service Transformation and Enterprise Delivery.
             </p>
             <ul class="project-tags">
@@ -184,7 +190,7 @@
             <p class="project-type">Infrastructure Delivery</p>
             <h3>Evergreen - Core and Infra</h3>
             <p>
-              Quality Engineering leadership across infrastructure, platform,
+              Quality engineering leadership across infrastructure, platform,
               operational readiness, and enterprise technology delivery.
             </p>
             <ul class="project-tags">
@@ -218,7 +224,7 @@
             <p class="project-type">Product Ownership</p>
             <h3>InDE - Insurance Digital Experience</h3>
             <p>
-              Unique combination of Product Ownership, Agile Delivery, Quality Engineering and Test Automation with a strong focus on value-driven Term Insurance product delivery internal to the bank branch staff.
+              A unique combination of product ownership, agile delivery, quality engineering, and test automation with a strong focus on value-driven term insurance product delivery for bank branch staff.
             </p>
             <ul class="project-tags">
               <li>Product Strategy & Vision</li>
@@ -234,8 +240,8 @@
             <p class="project-type">Test Environments</p>
             <h3>Managing Test Environments</h3>
             <p>
-              Managed complex test environments to ensure availability for testing for the various projects involved in Testing.
-              Executing Integrated Core Batch runs between Mainframe and LAPS for Payments processsing.
+              Managed complex test environments to ensure availability for testing across the various projects involved in testing.
+              Executed integrated core batch runs between mainframe and LAPS for payments processing.
             </p>
             <ul class="project-tags">
               <li>Integration</li>
@@ -251,8 +257,8 @@
             <p class="project-type">Development and Maintenance</p>
             <h3>IBM Global Business Services and Syntel Tech.</h3>
             <p>
-              Worked extensively as a developer in the Automotive, Telecom and  Energy and Utilities domain. Part of the
-              business transition from CapGemini India to IBM done in a 3-level phased approach - Guided, Assisted and Parallel Performs.
+              Worked extensively as a developer in the automotive, telecom, and energy and utilities domains. Part of the
+              business transition from CapGemini India to IBM, delivered in a three-phase approach: guided, assisted, and parallel performs.
             </p>
             <ul class="project-tags">
               <li>Development - COBOL, JCL and DB2</li>
@@ -265,7 +271,9 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills section detailing professional capabilities
+         across strategy, delivery, and operational
+         readiness domains with relevant technical skills. -->
     <section class="section" id="skills">
       <div class="container content-grid">
         <div>
@@ -274,50 +282,54 @@
         </div>
 
         <ul class="skill-list">
-          <li>AI assisted test approach</li>
+          <li>AI-assisted test approach</li>
           <li>Agile / SAFe Delivery Models</li>
           <li>Quality Engineering Strategy</li>
-          <li>Enterprise Test Management - Zephyr Scale and QC</li>
-          <li>Large-Scale Transformation Programs</li>
+          <li>Enterprise test management - Zephyr Scale and QC</li>
+          <li>Large-scale transformation programs</li>
           <li>Operational Readiness</li>
-          <li>Stakeholder and Executive Management</li>
+          <li>Stakeholder and executive management</li>
           <li>Vendor Management</li>
-          <li>Rest Assured - POSTMAN</li>
-          <li>JAVA, SQL</li>
+          <li>Rest Assured and Postman</li>
+          <li>Java, SQL</li>
           <li>Dynatrace</li>
-          <li>GIT, JIRA, Confluence</li>
-          <li>Mainframes - COBOL, JCL and DB2</li>
+          <li>Git, Jira, Confluence</li>
+          <li>Mainframes - COBOL, JCL, and DB2</li>
         </ul>
       </div>
     </section>
 
-    <!-- Achievements Section -->
+    <!-- Achievements section highlighting key career
+         accomplishments, awards, professional recognition,
+         and impactful contributions to enterprise programs. -->
     <section class="section" id="achievements">
       <div class="container content-grid">
         <div>
           <p class="section-label">Achievements</p>
-          <h2>Key achievements and value adds.</h2>
+          <h2>Key achievements and value adds</h2>
         </div>
 
         <div class="section-copy">
           <ul>
             <li>Recognized for delivering production systems, test leadership, automation improvements, and monitoring solutions across payments, insurance, and infrastructure domains.</li>
-            <li>Awarded MVP recognition for automation work and LEGEND nomination for critical disaster recovery implementation.</li>
-            <li>Certified in Fintech Product Management and IBM DB2 development, with experience spanning mainframes, functional/automation testing, and operational delivery.</li>
-            <li>Delivered Dynatrace implementation for InDE, BaNCS, and ISP, including live dashboards and server health monitoring as part of Carwash program.</li>
+            <li>Awarded MVP recognition for automation work and a LEGEND nomination for critical disaster recovery implementation.</li>
+            <li>Certified in fintech product management and IBM DB2 development, with experience spanning mainframes, functional and automation testing, and operational delivery.</li>
+            <li>Delivered Dynatrace implementation for InDE, BaNCS, and ISP, including live dashboards and server health monitoring as part of the Carwash program.</li>
             <li>Led SBI 7 Day Banking test management and Open Banking resolution activities for 2023/24.</li>
             <li>Delivered the Evergreen Project as Test Manager for the CIP Programme.</li>
             <li>Delivered full Operational Acceptance Testing for Evergreen across CPaaS, OPaaS, Platform Automation, and BUR streams.</li>
             <li>Delivered full Industry Testing for SBI 365 in 2023, including the final two rounds of UAT and Agency Bank testing.</li>
-            <li>Automated HOST batch date-change processes, reducing manual effort and saving at least 20 minutes per batch skip. Received an MVP award for this.</li>
+            <li>Automated HOST batch date-change processes, reducing manual effort and saving at least 20 minutes per batch skip. Received an MVP award for this work.</li>
             <li>Helped deploy InDE to production in 2018 and contributed to its success.</li>
-            <li>Set up Disaster Recovery for Teleform after 18 years without one, resulting in a LEGEND nomination.</li>
+            <li>Set up disaster recovery for Teleform after 18 years without one, resulting in a LEGEND nomination.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Certifications Section -->
+    <!-- Certifications section presenting verified professional
+         credentials and certifications that demonstrate
+         a commitment to continuous industry learning. -->
     <section class="section" id="certifications">
       <div class="container content-grid">
         <div>
@@ -329,16 +341,18 @@
           <p>
             View my verified professional certifications and achievements that demonstrate my commitment to continuous learning and industry best practices.
           </p>
-          <a class="button primary-button" href="https://www.credential.net/profile/adityajoshi588037/wallet" target="_blank" rel="noopener noreferrer">View All Certifications</a>
+          <a class="button primary-button" href="https://www.credential.net/profile/adityajoshi588037/wallet" target="_blank" rel="noopener noreferrer" aria-label="View all certifications in a new tab">View All Certifications</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact section providing email, LinkedIn, and
+         GitHub links for connecting about quality
+         engineering, product, or enterprise transformation. -->
     <section class="section contact-section" id="contact">
       <div class="container contact-content">
         <p class="section-label">Contact</p>
-        <h3>Let's talk about quality engineering, product ownership, readiness and delivery confidence.</h3>
+        <h2>Let's talk about quality engineering, product ownership, readiness, and delivery confidence.</h2>
         <p>
           I am always open to conversations about delivery challenges, quality
           engineering maturity, operational readiness and enterprise
@@ -346,9 +360,9 @@
         </p>
 
         <ul class="contact-links">
-            <li><a href="mailto:adityapjoshi@gmail.com"><i class="fa-solid fa-envelope"></i> E-Mail</a></li>
-            <li><a href="https://www.linkedin.com/in/aditya-joshi-38077820/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/adityapjoshi"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="mailto:adityapjoshi@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a></li>
+            <li><a href="https://www.linkedin.com/in/aditya-joshi-38077820/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/adityapjoshi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
         </ul>
       </div>
     </section>
