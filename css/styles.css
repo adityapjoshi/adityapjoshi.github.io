@@ -178,7 +178,9 @@ h3 {
 }
 
 .hero {
-  min-height: calc(100vh - 76px);
+  min-height: auto;
+  padding-top: 84px;
+  padding-bottom: 72px;
   display: flex;
   align-items: center;
 }
@@ -342,7 +344,7 @@ h3 {
 
 .highlight-box {
   margin-top: 24px;
-  padding: 26px;
+  padding: 24px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -366,7 +368,7 @@ h3 {
 
 .section-heading {
   max-width: 760px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .project-grid {
@@ -533,11 +535,12 @@ h3 {
   }
 
   .section {
-    padding: 56px 0;
+    padding: 52px 0;
   }
 
   .hero {
-    padding-top: 52px;
+    padding-top: 44px;
+    padding-bottom: 52px;
   }
 
   h1 {
