@@ -174,11 +174,13 @@ h3 {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 72px 0;
 }
 
 .hero {
-  min-height: calc(100vh - 76px);
+  min-height: auto;
+  padding-top: 84px;
+  padding-bottom: 72px;
   display: flex;
   align-items: center;
 }
@@ -328,7 +330,7 @@ h3 {
 .content-grid {
   display: grid;
   grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
-  gap: 64px;
+  gap: 48px;
 }
 
 .section-copy {
@@ -341,8 +343,8 @@ h3 {
 }
 
 .highlight-box {
-  margin-top: 34px;
-  padding: 26px;
+  margin-top: 24px;
+  padding: 24px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -366,7 +368,7 @@ h3 {
 
 .section-heading {
   max-width: 760px;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 
 .project-grid {
@@ -533,11 +535,12 @@ h3 {
   }
 
   .section {
-    padding: 72px 0;
+    padding: 52px 0;
   }
 
   .hero {
-    padding-top: 52px;
+    padding-top: 44px;
+    padding-bottom: 52px;
   }
 
   h1 {
