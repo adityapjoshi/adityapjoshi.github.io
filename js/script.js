@@ -196,7 +196,6 @@ const setTheme = (theme) => {
 
   if (themeToggle) {
     const icon = themeToggle.querySelector("i");
-    const label = themeToggle.querySelector("span");
 
     themeToggle.setAttribute(
       "aria-label",
@@ -205,10 +204,6 @@ const setTheme = (theme) => {
 
     if (icon) {
       icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
-    }
-
-    if (label) {
-      label.textContent = isDark ? "Light Mode" : "Dark Mode";
     }
   }
 };
