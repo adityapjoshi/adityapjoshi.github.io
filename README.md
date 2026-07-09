@@ -90,11 +90,7 @@ You can find it here:
 
 ## How Did I Build This Website?
 
-I used the Codex Playground to generate the HTML, CSS, and JavaScript code for
-the website and heavily customized it to create a clean, modern personal
-portfolio website to showcase my skills as a Sr. Test Manager and Product
-Owner.
+I used a mixture of OpenAI Codex - Codex Windows Destop App, Codex Integrated in IntelliJ, Codex CLI, Codex Cloud to generate the HTML, CSS, and JavaScript code for the website and heavily customized it to create a clean, modern personal
+portfolio website to showcase my skills as a Sr. Test Manager and Product Owner.
 
-Basic knowledge of how HTML, CSS, and JavaScript work is helpful for light
-troubleshooting and improvements. Feel free to fork it and make something of
-your own.
+Basic knowledge of how HTML, CSS, and JavaScript work is helpful for light troubleshooting and improvements. Feel free to fork it and make something ofyour own.
