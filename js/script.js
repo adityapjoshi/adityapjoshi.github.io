@@ -130,7 +130,6 @@ const createWordDocument = () => {
           padding-left: 0;
         }
 
-        .highlight-box,
         .project-card {
           border: 1px solid #cdd7d1;
           margin: 12px 0;
