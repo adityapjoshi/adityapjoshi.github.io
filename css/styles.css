@@ -102,6 +102,8 @@ h3 {
   display: none;
   width: 44px;
   height: 44px;
+  padding: 0;
+  margin: 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -110,6 +112,8 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 999px;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .nav-toggle span {
@@ -140,6 +144,8 @@ h3 {
   justify-content: center;
   width: 44px;
   height: 44px;
+  padding: 0;
+  margin: 0;
   flex-shrink: 0;
   border: 1px solid var(--line);
   background: var(--surface);
@@ -147,8 +153,9 @@ h3 {
   font: inherit;
   font-weight: 800;
   cursor: pointer;
-  padding: 0;
   border-radius: 999px;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .header-action-button:hover {
@@ -569,6 +576,7 @@ h3 {
   .nav {
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     min-height: auto;
     padding: 18px 0;
     gap: 12px;
