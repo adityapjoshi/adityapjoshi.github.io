@@ -208,7 +208,7 @@ const setTheme = (theme) => {
 };
 
 const savedTheme = getStoredTheme();
-const initialTheme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+const initialTheme = savedTheme === "light" || savedTheme === "dark" ? savedTheme : "dark";
 
 setTheme(initialTheme);
 
