@@ -1,4 +1,7 @@
 $listener = [System.Net.HttpListener]::new()
+# What: this script starts a tiny local web server for the portfolio.
+# How: PowerShell listens on localhost and serves files from the repo folder.
+# End result: you can test the site in a browser at http://127.0.0.1:8000/.
 $listener.Prefixes.Add('http://127.0.0.1:8000/')
 $listener.Start()
 

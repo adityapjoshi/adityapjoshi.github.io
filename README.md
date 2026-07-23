@@ -1,5 +1,9 @@
 # My Personal Website
 
+What: this repo is my personal portfolio website.
+How: the page is built with HTML, CSS, JavaScript, and GitHub Pages.
+End result: people can visit a clean site that shows my work and contact details.
+
 A clean, modern **Personal Portfolio** website built to showcase my journey
 starting as a Developer with IBM GBS and Syntel, then moving into Testing with
 Infosys Technologies and Westpac New Zealand.
