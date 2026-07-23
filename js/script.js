@@ -1,3 +1,6 @@
+/* What: this file adds the tiny bits of behavior for the page.
+   How: it listens for clicks, saves theme choice, and builds the Word download.
+   End result: the website feels interactive and useful. */
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 const downloadWordButton = document.querySelector("#download-word");

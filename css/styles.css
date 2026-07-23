@@ -1,3 +1,6 @@
+/* What: this file holds the visual rules for the whole portfolio.
+   How: it uses colors, spacing, layout, and theme variables.
+   End result: the site looks clean, modern, and easy to read. */
 :root {
   --background: #f5f2ea;
   --background-alt: #ede7dd;
