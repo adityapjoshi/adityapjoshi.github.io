@@ -50,6 +50,7 @@ const createWordDocument = () => {
   }
 
   content.querySelectorAll("i").forEach((icon) => icon.remove());
+  content.querySelectorAll(".hero-avatar").forEach((avatar) => avatar.remove());
   content.querySelectorAll(".hero-actions").forEach((actions) => actions.remove());
 
   const html = `
