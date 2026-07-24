@@ -1,14 +1,12 @@
-# My Personal Website
+# Portfolio Website
 
-What: this repo is my personal portfolio website.
-How: the page is built with HTML, CSS, JavaScript, and GitHub Pages.
-End result: people can visit a clean site that shows my work and contact details.
-
-A clean, modern **Personal Portfolio** website built to showcase my journey
+* A clean, modern **Personal Portfolio** website built to showcase my journey
 starting as a Developer with IBM GBS and Syntel, then moving into Testing with
 Infosys Technologies and Westpac New Zealand.
 
-It is focused on the skills I acquired over 18+ years of experience, including
+* It is built with HTML, CSS, JavaScript, and GitHub Pages.
+
+* It is focused on the skills I acquired over 18+ years of experience, including
 delivering digital products as part of insurance solutions, testing enterprise
 transformation programs in banking, and the core development and maintenance
 work completed during my earlier career.
@@ -94,7 +92,4 @@ You can find it here:
 
 ## How Did I Build This Website?
 
-I used a mixture of OpenAI Codex - Codex Windows Destop App, Codex Integrated in IntelliJ, Codex CLI, Codex Cloud to generate the HTML, CSS, and JavaScript code for the website and heavily customized it to create a clean, modern personal
-portfolio website to showcase my skills as a Sr. Test Manager and Product Owner.
-
-Basic knowledge of how HTML, CSS, and JavaScript work is helpful for light troubleshooting and improvements. Feel free to fork it and make something ofyour own.
+I used a mixture of OpenAI Codex - Codex Windows Destop App, Codex CLI, Codex Cloud to generate the HTML, CSS, and JavaScript code for the website and heavily customized it to create a clean, modern personal portfolio website to showcase my skills as a Sr. Test Manager and Product Owner.
